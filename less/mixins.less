@@ -1,1 +1,20 @@
 // Mixins in here
+
+.buttton-standard ( @bh, @bw){
+    color: white;
+    background-color: @button-bg;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    border-radius: 15px;
+    font-size: large;
+    height: @bh;
+    width: @bw;
+}
+
+.flex-display (@align, @adjust){
+    display: flex;
+    align-items: @align;
+    justify-content: @adjust;
+}
+
