@@ -278,12 +278,10 @@ nav {
   border-top: 2px dashed #C0C0C0;
   display: flex;
   justify-content: space-between;
-  border: solid red;
 }
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
-  border: solid blue;
 }
 .home .content-pick .destination .btn {
   color: white;
@@ -297,13 +295,17 @@ nav {
   width: 90%;
 }
 @media (max-width:500px) {
-  .home .content-pick .content-pick {
-    flex-direction: column;
-    justify-content: flex-start;
+  .home .content-pick {
     width: 100%;
+    display: flex;
+    flex-direction: column;
   }
   .home .content-pick .destination {
     width: 100%;
-    margin-bottom: 2%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
   }
 }
